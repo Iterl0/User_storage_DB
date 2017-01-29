@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User storage</title>
+	    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <script type='text/javascript' language='javascript' src='js/script.js'/></script> -->
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-xs-2">
+                Name
+                <input id="in_name" value="foosad" oninput="Ftest (this)" onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)">
+            </div>
+			<div class="col-xs-2">
+                Age
+                <input id="in_age" value="666" value="foosad" oninput="Ftest (this)" onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)">
+            </div>
+            <div class="col-xs-2">
+                Points
+                <input id="in_points" value="13" value="foosad" oninput="Ftest (this)" onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)">
+            </div>
+            <div class="col-xs-1" id="button_div">
+                <input class="btn btn-default" onclick="this.value=='Submit' ? action() : modify_value()" type="button" id="main_button" value="Submit">
+            </div>
+            <div class="col-xs-2" id="edit_info_div">
+                
+            </div>
+        </div>
+		<div class="row" id="sel_storage">
+            <div class="col-xs-2">
+                <p><input type="radio" name="storage" id="session" checked> Session</p>
+            </div>
+			<div class="col-xs-2">
+                <p><input type="radio" name="storage" id="cookies"> Cookies</p>
+            </div>
+            <div class="col-xs-2">
+                <p><input type="radio" name="storage" id="local" > Local</p>
+            </div>
+            <!-- <div class="col-xs-3">
+                <p><input type="radio" name="storage" id="foo" > Foo</p>
+            </div> -->
+    </div>    
+</section>
+<br>
+<section>
+	<div class="container">
+		<table class="table" id="myTableData">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Points</th>
+        <th>Id</th>
+        <th>Storage</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+  		</table>
+	</div>
+</section>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="js/script.js"></script>
